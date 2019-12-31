@@ -22,6 +22,8 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "@handsontable/vue": "^4.1.1",
+    "handsontable": "^7.3.0",
     "vue": "^2.6.11"
   }
 }
