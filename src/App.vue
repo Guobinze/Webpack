@@ -22,7 +22,6 @@
                     licenseKey: 'non-commercial-and-evaluation', // 隐藏版权文字
                     // data: Handsontable.helper.createSpreadsheetData(10, 26),//列表初始化数据
                     data: [
-                        ['', ''],
                         ['', '']
                     ],
                     startRows: 5, // 初始化行数,无data属性时生效(该值小于minRows时,以minRows为准)
@@ -35,6 +34,7 @@
                     rowHeaders: true, // 是否展示行表头,默认是1,2,3等数据,可以['行1','行2']进行自定义展示
                     colWidths: 200, // 列宽度
                     // dropdownMenu: true, // 表头展示下拉菜单,可以自定义展示
+                    // filters: true,
                     // dropdownMenu: {
                     //   items: {
                     //     'row_above': {
@@ -42,43 +42,19 @@
                     //     },
                     //     'row_below': {
                     //       name: '下面插入一行'
-                    //     },
-                    //     'col_left':{
-                    //       name: '左侧插入一列'
-                    //     },
-                    //     'col_right':{
-                    //       name: '右侧插入一列'
-                    //     },
-                    //     'remove_row':{
-                    //       name: '移除本行'
-                    //     },
-                    //     'remove_col':{
-                    //       name: '移除本列'
-                    //     },
-                    //     'alignment':{
-                    //       name: '对齐方式'
-                    //     },
-                    //     'make_read_only':{
-                    //       name:'只读'
-                    //     },
-                    //     // 'borders':{
-                    //     //   name: '边框'
-                    //     // },
-                    //     'copy':{
-                    //       name: '复制'
-                    //     },
-                    //     'cut':{
-                    //       name: '剪切'
-                    //     },
-                    //     'separator': Handsontable.plugins.ContextMenu.SEPARATOR,
-                    //     'clear_custom': {
-                    //       name: '清空所有单元格数据',
-                    //       callback: function () {
-                    //         this.clear()
-                    //       }
                     //     }
                     //   }
                     // },
+                    columns: [
+                        {
+                            type: 'dropdown',
+                            source: ['yellow', 'red', 'orange', 'green', 'blue', 'gray', 'black', 'white']
+                        },
+                        {
+                            type: 'dropdown',
+                            source: ['yellow', 'red', 'orange', 'green', 'blue', 'gray', 'black', 'white']
+                        }
+                    ],
                     className: 'htCenter', // 单元格文字对齐方式(htLeft,htRight,htCenter)
                     currentRowClassName: 'my-selectRow', // 给选中行添加自定义class类名
                     currentColClassName: 'my-selectCol', // 给选中列添加自定义class类名
@@ -115,9 +91,6 @@
                             'make_read_only': {
                                 name: '只读'
                             },
-                            // 'borders':{
-                            //   name: '边框'
-                            // },
                             'copy': {
                                 name: '复制'
                             },
@@ -135,6 +108,8 @@
                     }
                 }
             }
+        },
+        created() {
         }
     }
 </script>

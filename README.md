@@ -39,3 +39,8 @@ uglifyjs-webpack-plugin 压缩js
 webpack mode设置production的时候会自动压缩js代码。原则上不需要引入uglifyjs-webpack-plugin进行重复工作。但是optimize-css-assets-webpack-plugin压缩css的同时会破坏原有的js压缩，所以这里我们引入uglifyjs进行压缩
 
 #### 优化打包速度
+- 合理的配置mode参数与devtool参数  
+mode可设置development production两个参数
+如果没有设置，webpack4 会将 mode 的默认值设置为 production 
+production模式下会进行tree shaking(去除无用代码)和uglifyjs(代码压缩混淆)
+- 缩小文件的搜索范围(配置include exclude alias noParse extensions)
