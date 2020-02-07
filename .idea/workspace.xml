@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2797ea0d-bf58-4bb0-bebd-afa5afe3345a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/webpack.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/webpack.prod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppTable.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,6 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Vue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,6 +47,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
@@ -81,7 +84,9 @@
       <workItem from="1577782851597" duration="1370000" />
       <workItem from="1577786216434" duration="3228000" />
       <workItem from="1577789740522" duration="33000" />
-      <workItem from="1577932194094" duration="3392000" />
+      <workItem from="1577932194094" duration="3478000" />
+      <workItem from="1578024838644" duration="3050000" />
+      <workItem from="1580957926947" duration="5427000" />
     </task>
     <servers />
   </component>
